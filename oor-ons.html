@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leer meer oor Plaas Skaapboerdery – ons storie, waardes en boerderypraktyke.">
+  <meta name="author" content="Plaas Skaapboerdery">
+  <title>Oor ons | Plaas Skaapboerdery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    Blad uitleg:
+    - Selfde navigasie/tema as die res van die site
+    - Inhoud: "storie" + "hoe ons boer" in kaartjies/rooster
+    - Knoppies gebruik herbruikbare `.btn` komponente uit `style.css`
+  -->
+  <header>
+    <nav class="nav-bar container">
+      <a href="index.html" class="logo">Plaas Skaapboerdery</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Tuis</a></li>
+        <li><a href="oor-ons.html" class="active">Oor ons</a></li>
+        <li><a href="produkte.html">Produkte</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Afdeling 1: kort storie + waardes (2-kolom rooster op groter skerms) -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Ons storie</h2>
+          <p>’n Familieplaas met fokus op gehalte, dierewelsyn en volhoubare praktyke.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card card-pad">
+            <h3>Wie ons is</h3>
+            <p>Ons boer sedert 1995 met Merino en Dohne Merino. Ons doel is om konsekwente wolgehalte te lewer, etiese vleisproduksie te ondersteun en teeldiere te voorsien wat aanpasbaar en gesond is.</p>
+          </article>
+
+          <aside class="card card-pad card-hover">
+            <h3>Ons waardes</h3>
+            <p>Deursigtigheid, goeie rekordhouding en sorg vir die veld. Dit help ons om stabiele kwaliteit te handhaaf en langtermyn verhoudings met klante te bou.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Afdeling 2: "feature" kaartjies met hover-effekte -->
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Hoe ons boer</h2>
+          <p>Praktiese stappe wat die gesondheid van die kudde en die veld beskerm.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Weiding & bestuur</h3>
+            <p>Rotasieweiding om oorbeweiding te beperk en veldherstel te ondersteun.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Dierewelsyn</h3>
+            <p>Gereelde gesondheidsondersoeke, skoon water en skadu waar nodig.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Gehaltebeheer</h3>
+            <p>Sortering en hantering volgens beste praktyke vir beter konsekwentheid.</p>
+          </article>
+        </div>
+
+        <div style="margin-top: 1.2rem; display: flex; gap: .7rem; flex-wrap: wrap;">
+          <a class="btn btn-primary" href="produkte.html">Blaai deur produkte</a>
+          <a class="btn btn-ghost" href="kontak.html">Praat met ons</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: konsekwente site-voetskrif -->
+  <footer>
+    <div class="container footer-wrap">
+      <p>&copy; 2025 Plaas Skaapboerdery. Alle regte voorbehou.</p>
+      <p><a class="btn btn-ghost" href="kontak.html">Kontak ons</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+

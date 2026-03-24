@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontak Plaas Skaapboerdery vir kwotasies, bestellings of algemene navrae.">
+  <meta name="author" content="Plaas Skaapboerdery">
+  <title>Kontak | Plaas Skaapboerdery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    Kontak blad:
+    - Links: kontakbesonderhede + vinnige skakels
+    - Regs: kontakvorm (stilering kom uit `style.css`)
+    - Doel: ’n professionele, duidelike “call to action”
+  -->
+  <header>
+    <nav class="nav-bar container">
+      <a href="index.html" class="logo">Plaas Skaapboerdery</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Tuis</a></li>
+        <li><a href="oor-ons.html">Oor ons</a></li>
+        <li><a href="produkte.html">Produkte</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Kontak-inhoud in 2-kolom rooster -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Kontak ons</h2>
+          <p>Stuur ’n boodskap of vra ’n kwotasie — ons kontak jou terug.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card card-pad">
+            <h3>Kontakbesonderhede</h3>
+            <p><strong>Telefoon:</strong> 012 345 6789</p>
+            <p><strong>E-pos:</strong> info@plaasskaapboerdery.co.za</p>
+            <p><strong>Ligging:</strong> (Vul jou dorp/streek hier in)</p>
+            <div style="margin-top: .9rem; display: flex; gap: .6rem; flex-wrap: wrap;">
+              <a class="btn btn-primary" href="produkte.html">Sien produkte</a>
+              <a class="btn btn-ghost" href="oor-ons.html">Oor ons</a>
+            </div>
+          </article>
+
+          <aside class="card card-pad card-hover">
+            <h3>Kontakvorm</h3>
+            <form action="#" method="post">
+              <div>
+                <label for="naam">Naam</label>
+                <input id="naam" name="naam" type="text" placeholder="Jou naam" required>
+              </div>
+              <div>
+                <label for="epos">E-pos</label>
+                <input id="epos" name="epos" type="email" placeholder="naam@voorbeeld.co.za" required>
+              </div>
+              <div>
+                <label for="onderwerp">Onderwerp</label>
+                <input id="onderwerp" name="onderwerp" type="text" placeholder="Bv. Wol-kwotasie / Vleis-bestelling">
+              </div>
+              <div>
+                <label for="boodskap">Boodskap</label>
+                <textarea id="boodskap" name="boodskap" placeholder="Skryf jou boodskap hier..." required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Stuur boodskap</button>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: terug-skakel na tuis vir beter navigasie -->
+  <footer>
+    <div class="container footer-wrap">
+      <p>&copy; 2025 Plaas Skaapboerdery. Alle regte voorbehou.</p>
+      <p><a class="btn btn-ghost" href="index.html">Terug na tuis</a></p>
+    </div>
+  </footer>
+</body>
+</html>

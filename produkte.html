@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Produkte van Plaas Skaapboerdery – wol, lamsvleis en teeldiere.">
+  <meta name="author" content="Plaas Skaapboerdery">
+  <title>Produkte | Plaas Skaapboerdery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    Produkte blad:
+    - Bo: navigasie (hergebruik op alle bladsye)
+    - Middel: produk-kaartjies met knoppies (primary/ghost)
+    - Onder: ekstra info (afhaal/aflewering + kwotasies)
+  -->
+  <header>
+    <nav class="nav-bar container">
+      <a href="index.html" class="logo">Plaas Skaapboerdery</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Tuis</a></li>
+        <li><a href="oor-ons.html">Oor ons</a></li>
+        <li><a href="produkte.html" class="active">Produkte</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Produk-oorsig: kaartjies met hover-effek vir ’n professionele “catalog” gevoel -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Ons produkte</h2>
+          <p>Professionele aanbiedings met duidelike kaarte en “hover”-effekte.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="card card-pad card-hover" style="grid-column: span 4;">
+            <h3>Wol (Bale)</h3>
+            <p>Geklassifiseerde wol in grootmaat. Beskikbaar volgens seisoen en gehaltegrade.</p>
+            <div style="margin-top: .9rem; display: flex; gap: .6rem; flex-wrap: wrap;">
+              <a class="btn btn-primary" href="kontak.html">Navraag</a>
+              <a class="btn btn-ghost" href="oor-ons.html">Lees meer</a>
+            </div>
+          </article>
+
+          <article class="card card-pad card-hover" style="grid-column: span 4;">
+            <h3>Lamsvleis</h3>
+            <p>Vars of voorafbestel. Ideaal vir braai, gesinsgeleenthede en plaaslike markte.</p>
+            <div style="margin-top: .9rem; display: flex; gap: .6rem; flex-wrap: wrap;">
+              <a class="btn btn-primary" href="kontak.html">Bestel</a>
+              <a class="btn btn-ghost" href="index.html#">Tuis</a>
+            </div>
+          </article>
+
+          <article class="card card-pad card-hover" style="grid-column: span 4;">
+            <h3>Teeldiere</h3>
+            <p>Ramme en ooie met goeie groei, konformasie en genetiese agtergrond (waar beskikbaar).</p>
+            <div style="margin-top: .9rem; display: flex; gap: .6rem; flex-wrap: wrap;">
+              <a class="btn btn-primary" href="kontak.html">Beskikbaarheid</a>
+              <a class="btn btn-ghost" href="oor-ons.html">Waardes</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekondêre inhoud: 2-kolom uitleg vir logistiek + kwotasies -->
+    <section class="features">
+      <div class="container">
+        <div class="grid-2">
+          <article class="card card-pad">
+            <h3>Afhaal / Aflewering</h3>
+            <p>Afhangend van die area kan ons afhaal reël of aflewering bespreek. Skryf jou ligging in jou boodskap sodat ons die beste opsie kan voorstel.</p>
+          </article>
+          <aside class="card card-pad card-hover">
+            <h3>Kwotasies</h3>
+            <p>Vir ’n kwotasie: noem die produk, hoeveelheid, en verlangde datum. Ons antwoord so gou moontlik.</p>
+            <div style="margin-top: .9rem;">
+              <a class="btn btn-primary" href="kontak.html">Vra ’n kwotasie</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: konsekwente voetskrif + vinnige kontak skakel -->
+  <footer>
+    <div class="container footer-wrap">
+      <p>&copy; 2025 Plaas Skaapboerdery. Alle regte voorbehou.</p>
+      <p><a class="btn btn-ghost" href="kontak.html">Kontak ons</a></p>
+    </div>
+  </footer>
+</body>
+</html>
