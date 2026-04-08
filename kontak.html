@@ -23,6 +23,7 @@
         <li><a href="oor-ons.html">Oor ons</a></li>
         <li><a href="produkte.html">Produkte</a></li>
         <li><a href="kontak.html" class="active">Kontak</a></li>
+        <li><a href="produkte.html" title="Winkeltrollie / Mandjie">🛒 Mandjie</a></li>
       </ul>
     </nav>
   </header>
@@ -53,7 +54,7 @@
             <form action="#" method="post">
               <div>
                 <label for="naam">Naam</label>
-                <input id="naam" name="naam" type="text" placeholder="Jou naam" required>
+                <input id="naam" name="naam" type="text" placeholder="Jou naam" required minlength="3">
               </div>
               <div>
                 <label for="epos">E-pos</label>
@@ -61,11 +62,11 @@
               </div>
               <div>
                 <label for="onderwerp">Onderwerp</label>
-                <input id="onderwerp" name="onderwerp" type="text" placeholder="Bv. Wol-kwotasie / Vleis-bestelling">
+                <input id="onderwerp" name="onderwerp" type="text" placeholder="Bv. Wol-kwotasie / Vleis-bestelling" required minlength="4">
               </div>
               <div>
                 <label for="boodskap">Boodskap</label>
-                <textarea id="boodskap" name="boodskap" placeholder="Skryf jou boodskap hier..." required></textarea>
+                <textarea id="boodskap" name="boodskap" placeholder="Skryf jou boodskap hier..." required minlength="10"></textarea>
               </div>
               <button class="btn btn-primary" type="submit">Stuur boodskap</button>
             </form>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="af">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <title>Produkte | Plaas Skaapboerdery</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!--
     Produkte blad:
@@ -23,6 +25,7 @@
         <li><a href="oor-ons.html">Oor ons</a></li>
         <li><a href="produkte.html" class="active">Produkte</a></li>
         <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="produkte.html" title="Winkeltrollie / Mandjie">🛒 Mandjie</a></li>
       </ul>
     </nav>
   </header>
@@ -67,32 +70,108 @@
       </div>
     </section>
 
-    <!-- Sekondêre inhoud: 2-kolom uitleg vir logistiek + kwotasies -->
-    <section class="features">
+    <!-- Pryse en Voorraad Tabelle -->
+    <section class="content-section">
       <div class="container">
-        <div class="grid-2">
-          <article class="card card-pad">
-            <h3>Afhaal / Aflewering</h3>
-            <p>Afhangend van die area kan ons afhaal reël of aflewering bespreek. Skryf jou ligging in jou boodskap sodat ons die beste opsie kan voorstel.</p>
-          </article>
-          <aside class="card card-pad card-hover">
-            <h3>Kwotasies</h3>
-            <p>Vir ’n kwotasie: noem die produk, hoeveelheid, en verlangde datum. Ons antwoord so gou moontlik.</p>
-            <div style="margin-top: .9rem;">
-              <a class="btn btn-primary" href="kontak.html">Vra ’n kwotasie</a>
-            </div>
-          </aside>
+        <div class="section-title">
+          <h2>Pryse en Voorraad</h2>
+          <p>Huidige pryse en beskikbaarheid van ons hoofprodukte.</p>
+        </div>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Produk</th>
+                <th>Beskrywing</th>
+                <th>Prys</th>
+                <th>Voorraadstatus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lamsvleis (Heel karkas)</td>
+                <td>Gereed verpak vir die vrieskas</td>
+                <td>R 95.00 / kg</td>
+                <td>Beskikbaar (Voorafbestel 7 dae)</td>
+              </tr>
+              <tr>
+                <td>Wol (Merino 1ste Graad)</td>
+                <td>Skoon skeersel van top kwaliteit</td>
+                <td>R 180.00 / kg</td>
+                <td>Uitverkore tot volgende seisoen</td>
+              </tr>
+              <tr>
+                <td>Teelramme</td>
+                <td>Getoetsde Merino en Dohne Merino</td>
+                <td>Vanaf R 8000.00</td>
+                <td>12 Ramme beskikbaar</td>
+              </tr>
+              <tr>
+                <td>Teelooie</td>
+                <td>Verkoop in groepe van 10</td>
+                <td>R 2500.00 elk</td>
+                <td>50 Ooie beskikbaar</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- Footer: konsekwente voetskrif + vinnige kontak skakel -->
-  <footer>
-    <div class="container footer-wrap">
-      <p>&copy; 2025 Plaas Skaapboerdery. Alle regte voorbehou.</p>
-      <p><a class="btn btn-ghost" href="kontak.html">Kontak ons</a></p>
-    </div>
-  </footer>
+    <!-- Bestelvorm -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Bestelvorm / Aankoopvorm</h2>
+          <p>Plaas jou bestelling hieronder en ons kontak jou om besonderhede te bevestig.</p>
+        </div>
+        <div class="contact-form"
+          style="margin: 0 auto; background-color: transparent; box-shadow: none; border: 1px solid #ccc;">
+          <form action="#" method="post">
+            <div>
+              <label for="bestel-naam">Volle Naam</label>
+              <input id="bestel-naam" name="naam" type="text" placeholder="Jou naam en van" required minlength="3">
+            </div>
+            <div>
+              <label for="bestel-epos">E-posadres</label>
+              <input id="bestel-epos" name="epos" type="email" placeholder="naam@voorbeeld.co.za" required>
+            </div>
+            <div>
+              <label for="bestel-tel">Telefoonnommer</label>
+              <input id="bestel-tel" name="telefoon" type="tel" pattern="[0-9]{10}" placeholder="Bv. 0821234567"
+                required title="Voer asseblief 'n 10-syfer telefoonnommer in">
+            </div>
+            <div>
+              <label for="bestel-produk">Produk</label>
+              <select id="bestel-produk" name="produk" required>
+                <option value="">-- Kies 'n produk --</option>
+                <option value="Lamsvleis">Lamsvleis</option>
+                <option value="Wol">Wol</option>
+                <option value="Ramme">Teelramme</option>
+                <option value="Ooie">Teelooie</option>
+              </select>
+            </div>
+            <div>
+              <label for="bestel-hvl">Hoeveelheid</label>
+              <input id="bestel-hvl" name="hoeveelheid" type="number" min="1" placeholder="Bv. 2" required>
+            </div>
+            <div>
+              <label for="bestel-datum">Verlangde datum</label>
+              <input id="bestel-datum" name="datum" type="date" required>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width: 100%;">Plaas Bestelling</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer: konsekwente voetskrif + vinnige kontak skakel -->
+    <footer>
+      <div class="container footer-wrap">
+        <p>&copy; 2025 Plaas Skaapboerdery. Alle regte voorbehou.</p>
+        <p><a class="btn btn-ghost" href="kontak.html">Kontak ons</a></p>
+      </div>
+    </footer>
 </body>
+
 </html>
